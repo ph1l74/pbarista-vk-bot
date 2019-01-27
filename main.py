@@ -19,6 +19,11 @@ def main():
     keyboard.add_button(label="80 руб. Американо средний", color="primary")
     keyboard.add_line()
     keyboard.add_button(label="99 руб. Все остальное", color="primary")
+    keyboard.add_line()
+    keyboard.add_button(label="10 руб. Сироп мал.", color="primary")
+    keyboard.add_button(label="15 руб. Сироп средн.", color="primary")
+    keyboard.add_button(label="20 руб. Сироп бол.", color="primary")
+
 
     vk.messages.send(
         peer_id=(str(config.chat_id)),
