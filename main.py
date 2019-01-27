@@ -12,6 +12,8 @@ def main():
     long_poll = VkBotLongPoll(vk_session, int(config.group_id))
 
     keyboard = VkKeyboard(one_time=False)
+    keyboard.add_button(label="0 руб. Бесплатный", color="primary")
+    keyboard.add_line()
     keyboard.add_button(label="70 руб. Американо мал. / Чай", color="primary")
     keyboard.add_line()
     keyboard.add_button(label="80 руб. Американо средний", color="primary")
