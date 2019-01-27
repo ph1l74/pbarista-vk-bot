@@ -12,9 +12,11 @@ def main():
     long_poll = VkBotLongPoll(vk_session, int(config.group_id))
 
     keyboard = VkKeyboard(one_time=False)
-    keyboard.add_button(label="70 руб.", color="primary")
-    keyboard.add_button(label="80 руб.", color="primary")
-    keyboard.add_button(label="90 руб.", color="primary")
+    keyboard.add_button(label="70 руб. Американо мал. / Чай", color="primary")
+    keyboard.add_line()
+    keyboard.add_button(label="80 руб. Американо средний", color="primary")
+    keyboard.add_line()
+    keyboard.add_button(label="99 руб. Все остальное", color="primary")
 
     vk.messages.send(
         peer_id=(str(config.chat_id)),
